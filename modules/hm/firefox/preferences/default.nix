@@ -276,8 +276,8 @@ in {
   "browser.search.modernConfig" = false;
 
   # Disable captive portal detection
-  "captivedetect.canonicalURL" = "";
-  "network.captive-portal-service.enabled" = false;
+  #"captivedetect.canonicalURL" = "";
+  #"network.captive-portal-service.enabled" = false;
 
   # Canvas fingerprint protection
   "privacy.resistFingerprinting" = true;
