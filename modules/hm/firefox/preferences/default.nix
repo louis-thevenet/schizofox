@@ -2,7 +2,7 @@
   inherit (cfg.theme.colors) background-darker background foreground;
 in {
   # Quality of life stuff
-  "browser.download.useDownloadDir" = false;
+  "browser.download.useDownloadDir" = true;
   "browser.aboutConfig.showWarning" = false;
   "browser.tabs.firefox-view" = false;
   "browser.toolbars.bookmarks.visibility" = "never";
