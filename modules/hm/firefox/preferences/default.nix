@@ -220,7 +220,7 @@ in {
   "browser.search.update" = false;
 
   # only allow https in all windows, including private browsing
-  "dom.security.https_only_mode" = true;
+  "dom.security.https_only_mode" = false;
 
   # block HTTP authentication credential dialogs
   "network.auth.subresource-http-auth-allow" = 1;
