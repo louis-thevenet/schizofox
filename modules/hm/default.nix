@@ -82,13 +82,13 @@ in {
         Version=2
       '';
       # userChrome content
-      "${defaultProfile}/chrome/userChrome.css".text = import ./firefox/userChrome.nix {inherit pkgs lib cfg self;};
+      "${defaultProfile}/chrome/userChrome.css".text = import ./schizofox/userChrome.nix {inherit pkgs lib cfg self;};
 
       # userContent
-      "${defaultProfile}/chrome/userContent.css".text = import ./firefox/userContent.nix {inherit pkgs lib cfg self;};
+      "${defaultProfile}/chrome/userContent.css".text = import ./schizofox/userContent.nix {inherit pkgs lib cfg self;};
 
       # user.js
-      "${defaultProfile}/user.js".text = mkUserJs (import ./firefox/preferences {inherit cfg lib;}) cfg.settings;
+      "${defaultProfile}/user.js".text = mkUserJs (import ./schizofox/preferences {inherit cfg lib;}) cfg.settings;
     };
 
     home.packages = let
@@ -117,7 +117,7 @@ in {
               "org.freedesktop.Notifications" = "talk";
 
               "org.freedesktop.portal.FileChooser" = "talk";
-              #"org.freedesktop.portal.Settings" = "talk";
+              "org.freedesktop.portal.Settings" = "talk";
 
               "org.mpris.MediaPlayer2.firefox.*" = "own";
               "org.mozilla.firefox.*" = "own";
@@ -163,7 +163,7 @@ in {
                 (envSuffix "XDG_RUNTIME_DIR" "/doc")
                 (envSuffix "XDG_RUNTIME_DIR" "/dconf")
 
-                (sloth.concat [sloth.homeDir "/.mozilla"])
+                (sloth.concat [sloth.homeDir "/.mozilla_schizofox"])
               ];
 
               bind.ro =
