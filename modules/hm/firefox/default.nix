@@ -42,7 +42,7 @@
         DisableFirefoxAccounts = true;
         DisablePocket = true;
         DisableFormHistory = true;
-        DisplayBookmarksToolbar = false;
+        DisplayBookmarksToolbar = true;
         DontCheckDefaultBrowser = true;
         DisableSetDesktopBackground = true;
         PasswordManagerEnabled = false;
