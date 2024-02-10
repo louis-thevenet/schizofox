@@ -35,12 +35,12 @@ self: {
   mozillaConfigPath =
     if isDarwin
     then "Library/Application Support/Mozilla"
-    else "${config.home.homeDirectory}/.mozilla";
+    else "${config.home.homeDirectory}/.mozilla_schizofox";
 
   firefoxConfigPath =
     if isDarwin
     then "Library/Application Support/Firefox"
-    else mozillaConfigPath + "/firefox";
+    else mozillaConfigPath + "/schizofox";
 
   profilesPath =
     if isDarwin
