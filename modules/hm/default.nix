@@ -117,7 +117,7 @@ in {
               "org.freedesktop.Notifications" = "talk";
 
               "org.freedesktop.portal.FileChooser" = "talk";
-              "org.freedesktop.portal.Settings" = "talk";
+              #"org.freedesktop.portal.Settings" = "talk";
 
               "org.mpris.MediaPlayer2.firefox.*" = "own";
               "org.mozilla.firefox.*" = "own";
