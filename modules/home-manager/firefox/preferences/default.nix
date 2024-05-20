@@ -181,7 +181,9 @@ in {
   # Prevent sites from taking over copy/paste
   "dom.event.clipboardevents.enabled" = false;
   # Prevent sites from taking over right click
-  "dom.event.contextmenu.enabled" = false;
+  "dom.event.contextmenu.enabled" = true;
+
+  "dom.events.asyncClipboard.dataTransfer" = true;
 
   # Disable gamepad API to prevent USB device enumeration
   # https://www.w3.org/TR/gamepad/
