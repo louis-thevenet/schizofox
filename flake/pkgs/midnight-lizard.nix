@@ -18,7 +18,7 @@ in
       rev = version;
       hash = "sha256-eExE8lj85oZpFagBX2wPEgAO3nI933BUSGFuf5zCGMU=";
     };
-
+    dontNpmBuild = true;
     npmDepsHash = "sha256-l0gQRz7fnPgFZ0goKNivInt0x4584vP2m7dOuosWDBo=";
 
     patchPhase = ''
