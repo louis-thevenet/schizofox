@@ -6,26 +6,26 @@
   foreground ? "cdd6f4",
   ...
 }: let
-  version = "4.9.86";
+  version = "10.4";
 in
   buildNpmPackage {
-    pname = "darkreader";
+    pname = "midnight-lizard";
     inherit version;
 
     src = fetchFromGitHub {
-      owner = "darkreader";
-      repo = "darkreader";
+      owner = "Midnight-Lizard";
+      repo = "Midnight-Lizard";
       rev = "v${version}";
-      hash = "sha256-i5/zlDunCzqGAf6VtgGk/hUKQeavcxbxSZuaOvDaMiw=";
+      hash = "";
     };
 
-    npmDepsHash = "sha256-0Rl3ceRywaGFNo+OF55vSlTbI2II//w//YIK0I5+b5o=";
+    npmDepsHash = "";
 
     patchPhase = ''
       runHook prePatch
 
-      substituteInPlace src/defaults.ts --replace "181a1b" ${background}
-      substituteInPlace src/defaults.ts --replace "e8e6e3" ${foreground}
+    #   substituteInPlace src/defaults.ts --replace "181a1b" ${background}
+    #   substituteInPlace src/defaults.ts --replace "e8e6e3" ${foreground}
 
       runHook postPatch
     '';

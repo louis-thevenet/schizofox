@@ -62,7 +62,7 @@ security, we would recommend that look into the Tor browser.
         module.
   - [x] Custom `userStyle` and `userChrome` configurations
 - [x] Declarative theming. Schizofox allows for browser-wide theming with 3
-      colors and a font, with DarkReader integration.
+      colors and a font, with Midnight Lizard integration.
 - [x] Optional [NixPak] wrapping sandboxing and additional security
 - [x] Searx instance randomizer
 - [ ] User agent randomizer
@@ -142,7 +142,7 @@ programs.schizofox = {
 
   extensions = {
     simplefox.enable = true;
-    darkreader.enable = true;
+    midnight-lizard.enable = true;
 
     extraExtensions = {
       "webextension@metamask.io".install_url = "https://addons.mozilla.org/firefox/downloads/latest/ether-metamask/latest.xpi";

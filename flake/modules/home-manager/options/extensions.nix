@@ -25,7 +25,7 @@ in {
       };
     };
 
-    darkreader.enable = mkEnableOption ''
+    midnight-lizard.enable = mkEnableOption ''
       Dark mode on all websites with a patched version of DarkReader
       to conform to your Schizofox theming options.
 
