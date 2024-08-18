@@ -15,7 +15,7 @@ in
     src = fetchFromGitHub {
       owner = "Midnight-Lizard";
       repo = "Midnight-Lizard";
-      rev = "v${version}";
+      rev = version;
       hash = "";
     };
 
