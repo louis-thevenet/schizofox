@@ -12,7 +12,7 @@ in {
     (mkRenamedOptionModule ["programs" "schizofox" "theme" "foreground"] ["programs" "schizofox" "theme" "colors" "foreground"])
 
     (mkRenamedOptionModule ["programs" "schizofox" "theme" "simplefox"] ["programs" "schizofox" "extensions" "simplefox"])
-    (mkRenamedOptionModule ["programs" "schizofox" "theme" "darkreader"] ["programs" "schizofox" "extensions" "darkreader"])
+    (mkRenamedOptionModule ["programs" "schizofox" "theme" "midnight-lizard"] ["programs" "schizofox" "extensions" "midnight-lizard"])
 
     (mkRenamedOptionModule ["programs" "schizofox" "misc" "drmFix"] ["programs" "schizofox" "misc" "drm" "enable"])
   ];
