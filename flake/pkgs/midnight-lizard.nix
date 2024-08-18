@@ -16,7 +16,7 @@ in
       owner = "Midnight-Lizard";
       repo = "Midnight-Lizard";
       rev = version;
-      hash = "";
+      hash = "sha256-eExE8lj85oZpFagBX2wPEgAO3nI933BUSGFuf5zCGMU=";
     };
 
     npmDepsHash = "";
